@@ -55,10 +55,6 @@ body {
     .HeaderMobileButton{
         display: none;
     }
-    .HeaderRedirects{
-        display: flex;
-        opacity: 100;
-    }
 
 }
 /*Header Stylization*/
@@ -143,7 +139,12 @@ body {
     opacity: 100;
     transition: all 300ms ease;
 }
-
+.Hide{
+    display:none
+}
+.Show{
+    display: flex;
+}
 
 .HeaderRedirects a{
     text-decoration: none;
