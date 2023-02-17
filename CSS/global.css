@@ -27,6 +27,13 @@ body {
         background-color: #741a17;
  
     }
+    .HeaderRedirectsPC a{
+        color: white;
+    }
+    .HeaderRedirectsPC a:hover{
+        background-color: #741a17;
+ 
+    }
 
 }
 @media (prefers-color-scheme: light){
@@ -50,12 +57,44 @@ body {
     .HeaderRedirects a:hover{
         background-color: #fdd6d5;
     }
+    .HeaderRedirectsPC a{
+        color: black;
+    }
+    .HeaderRedirectsPC a:hover{
+        background-color: #fdd6d5;
+    }
+    .Main{
+        color: white;
+    }
 }
 @media (min-width: 1024px){
     .HeaderMobileButton{
         display: none;
     }
-
+    .HeaderRedirectsPC{
+        display: flex;
+        position:absolute;
+        width: fit-content;
+        height: fit-content;
+        margin: auto;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    .HeaderRedirectsPC a{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 1.5em;
+        text-decoration: none;
+        padding: 18px 48px;
+        margin: 0px 12px;
+        
+    }
+}
+@media (max-width: 1023px){
+    .HeaderRedirectsPC{
+        display: none;
+    }
 }
 /*Header Stylization*/
 .Header{
@@ -152,4 +191,27 @@ body {
     margin: 6px 16px;
     border-radius: 1%;
     
+}
+.Main{
+    position: relative;
+}
+.Main img{
+    width: 100%;
+}
+.Main h1{
+    position: absolute;
+    top: 5%;
+    width: fit-content;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.Main p{
+    position: absolute;
+    top: 25%;
+    text-align: center;
+    left: 0;
+    width: 80%;
+    right: 0;
+    margin: 0 auto;
 }
