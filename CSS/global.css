@@ -13,28 +13,33 @@ body {
         background-color: #3f0200;
     }
     .HeaderRedirects{
-        background-color: #3f0200;
-        border: 2px solid #1D0100;
+        background-color: #1D0100;
+        border: 2px solid black;
     }
-    .HeaderRedirects{
-        background-color: #3f0200;
-        border: 2px solid #1D0100;
-    }
+
     .HeaderRedirects a{
         color: white;
     }
     .HeaderRedirects a:hover{
-        background-color: #741a17;
+        background-color: #3f0200;
  
     }
     .HeaderRedirectsPC a{
         color: white;
     }
     .HeaderRedirectsPC a:hover{
-        background-color: #741a17;
+        background-color: #3f0200;
  
     }
-
+    .Main{
+        color: white;
+    }
+    .Wave{
+        content:url(../Images/wave-dark.svg);
+    }
+    body{
+        background-color: #444444;
+    }
 }
 @media (prefers-color-scheme: light){
     .Header{
@@ -63,8 +68,8 @@ body {
     .HeaderRedirectsPC a:hover{
         background-color: #fdd6d5;
     }
-    .Main{
-        color: white;
+    .Wave{
+        content:url(../Images/wave.svg);
     }
 }
 @media (min-width: 1024px){
@@ -171,6 +176,7 @@ body {
     border-radius: 1%;
     font-size: 1.5em;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    z-index: 2;
     opacity: 0;
     transition: opacity 300ms ease;
 }
@@ -195,23 +201,30 @@ body {
 .Main{
     position: relative;
 }
-.Main img{
-    width: 100%;
-}
-.Main h1{
-    position: absolute;
-    top: 5%;
-    width: fit-content;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-}
-.Main p{
-    position: absolute;
-    top: 25%;
+.MainContent div{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
     text-align: center;
-    left: 0;
+    font-size: small;
+    z-index: 1;
+}
+.MainContent{
+    display: flex;
+    position: absolute;
+    top: 0;
+}
+
+.Wave{
+    width: 100%;
+    margin-top: -2px;
+}
+#Motorcycle{
+    position:absolute;
+    right: -10%;
     width: 80%;
-    right: 0;
-    margin: 0 auto;
+    transform: rotate(-15deg);
+    aspect-ratio: 16/9 ;
+    scale: -1 1;
+    z-index: 0;
 }
